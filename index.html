@@ -1,28 +1,60 @@
-    <!DOCTYPE html>
-    <html>
-    <head>
-    </head>
-        <section>
-    <title>GIF Background Example</title>
-        <div>
-    <style>
-      body {
-        background-image: url('20250908_0000_Chocolate-Covered Laptop Meltdown_storyboard_01k4m1zwv6eqfr2c5bvbpy8ay5.gif'); /* Replace with your GIF's path/URL */
-        background-repeat: no-repeat; /* Prevents the GIF from repeating */
-        background-size: cover; /* Ensures the GIF covers the entire background */
-        background-position: center; /* Centers the GIF */
-        height: 100vh; /* Ensures the body takes full viewport height */
-        margin: 0; /* Removes default body margin */
-        padding: 0; /* Removes default body padding */
-      }
-    </style>
-            </div>
-            </section>
-        <section>
-    <body>
-    <div>sponsor 1</div>
-    <div>sponsor 2</div>
-    <div>sponsor 3</div>
-    </body>
-            </section>
-    </html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Melting Choco Laptop</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Hero Section */
+    section.hero {
+      background-image: url('20250908_0000_Chocolate-Covered Laptop Meltdown_storyboard_01k4m1zwv6eqfr2c5bvbpy8ay5.gif'); /* Replace with your GIF path */
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 100vh;          /* full viewport height */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    /* Sponsors Section */
+    section.sponsors {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px;
+      background: #f5f5f5;   /* light gray background */
+    }
+
+    .sponsor {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 1.2em;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      flex: 1;
+      max-width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Our Event</h1>
+  </section>
+
+  <!-- Sponsors Section -->
+  <section class="sponsors">
+    <div class="sponsor">Sponsor 1</div>
+    <div class="sponsor">Sponsor 2</div>
+    <div class="sponsor">Sponsor 3</div>
+  </section>
+</body>
+</html>
